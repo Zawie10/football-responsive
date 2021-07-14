@@ -1,0 +1,96 @@
+/* Top Banner Styles  */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightcyan;
+}
+.top-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border: 1px solid blue;
+    justify-content: center;
+    background-color: blue;
+}
+
+h1{
+    font-size: 40px;
+}
+.title{
+    width: 485px;
+    height: 230px;
+    margin-left: 156px ;
+    margin-top: 207px;
+    color: white;
+    
+}
+.top-image img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 153px;
+    margin-right: 140.99px;
+    margin-bottom: 86px;
+    
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 30px;
+    
+    
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    
+    grid-column-gap: 30px;
+    width: 600px;
+    height:300px ;
+}
+
+
+.player img {
+    width: 300px;
+    height: 256px;
+    align-items: center;
+}
+h3{
+    font-size:  16px; ;
+}
+.last-stage{
+    display: flex;
+    flex-direction:column ;
+}
+.last-image img{
+    width: 567px;
+    height: 427px;
+}
+a:hover { width: 100px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;}
+    
+/* Media Queries */
+/* Mobile Devices */
+ @media only screen and (max-width:668px) {
+     .top-banner .container{
+         width: 100%;
+     }
+     .title .top-image .players {
+         grid-template-columns: repeat (1, 1fr);
+     }
+     .title .top-image .player{
+         flex-direction: column
+     }
+     
+ }
+ /* Tab devices */
+ @media only screen (min-width: 688px) and (max-width:992px) {
+    .players {
+        grid-template-columns: repeat (1, 1fr);
+ }
